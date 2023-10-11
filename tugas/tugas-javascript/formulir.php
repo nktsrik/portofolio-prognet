@@ -6,9 +6,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Form Data Diri</title>
@@ -21,10 +18,10 @@
         <div class="col-lg-12 mb-4 mb-sm-5">
           <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
             <div class="col-lg-6 px-xl-10">
-              <h3 class="h2 text-black mb-0 text-center">FORMULIR DATA PRIBADI</h3>
+              <h3 class="h2 text-black mb-0 text-center">RESPONSE FORMULIR DATA PRIBADI</h3>
               <br />
               <br />
-              <form onsubmit="return validateForm();">
+              <form action="proses.php" method="post" >
                 <div class="mb-2 mb-xl-3 display-28">
                   <label for="nama" class="display-26 text-dark me-2 font-weight-600 fw-bold">Nama Lengkap:</label>
                   <input type="text" id="nama" name="nama" required />
@@ -51,7 +48,7 @@
                 </div>
                 <div class="mb-2 mb-xl-3 display-28">
                   <label for="program-studi" class="display-26 text-dark me-2 font-weight-600 fw-bold">Program Studi:</label>
-                  <select id="program-studi" name="program-studi" required>
+                  <select id="program-studi" name="program_studi" required>
                     <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
                     <option value="S1 Teknik Sipil">S1 Teknik Sipil</option>
                     <option value="S1 Teknik Mesin">S1 Teknik Mesin</option>
